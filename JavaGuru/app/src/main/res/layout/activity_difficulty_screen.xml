@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DifficultyScreen">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/javaminds"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="CHOOSE DIFFICULT LEVEL"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="EASY"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnModerate"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="MODERATE"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="HARD"
+        android:textSize="20dp"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

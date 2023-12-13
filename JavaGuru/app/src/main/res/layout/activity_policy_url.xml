@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".PolicyUrl">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="380dp"
+        android:layout_height="636dp"
+        android:background="@drawable/card_layout"
+        android:elevation="2sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <WebView
+        android:id="@+id/policyUrlViewContent"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:elevation="2sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/agreePolicyUrl"
+        android:layout_width="124dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/card_layout"
+        android:elevation="15dp"
+        android:text="Agree"
+        android:textAllCaps="false"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/policyUrlViewContent"
+        app:layout_constraintTop_toBottomOf="@+id/policyUrlViewContent" />
+
+    <TextView
+        android:id="@+id/cancelPolicyUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="100dp"
+        android:elevation="15dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/darkBlue"
+        app:layout_constraintBottom_toBottomOf="@+id/agreePolicyUrl"
+        app:layout_constraintEnd_toStartOf="@+id/agreePolicyUrl"
+        app:layout_constraintStart_toStartOf="@+id/policyUrlViewContent"
+        app:layout_constraintTop_toTopOf="@+id/agreePolicyUrl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
